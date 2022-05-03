@@ -12,6 +12,10 @@
     background-color: #f4eede;
     background-image: url(../img/bg-uzor-8.png);
     background-size: contain;
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
   }
   
   .fa-solid {
@@ -34,9 +38,7 @@
   }
   
   .header {
-    .active {
-      transform: translateX(0);
-    }
+   
     .nav {
     position: absolute;
     right: 0;
@@ -44,10 +46,13 @@
     width: 40%;
     -webkit-transform: translateX(150%);
             transform: translateX(150%);
-    -webkit-transition: 2s;
-    transition: 2s;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
     background-color: #f4eede;
     z-index: 4;
+  }
+  .active {
+    transform: translateX(0);
   }
 }
     
@@ -88,9 +93,8 @@
     justify-content: center;
     gap: 10px;
     .dot {
-      width: 20px;
-      height: 20px;
-      
+      width: 15px;
+      height: 15px;
       background-color: rgb(182, 181, 181);
       border-radius: 50%;
     }
