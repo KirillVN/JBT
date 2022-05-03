@@ -4,7 +4,7 @@ menuBtn.addEventListener('click', showNav)
 
 // slider
 import {nextSlide, showSlide, currentSlide, images} from "./slider.js"
-const intervalID = setInterval(nextSlide, 5000);
+const intervalID = setInterval(nextSlide, 3000);
 
 // indicators slider 
 import {activeDot, dots, getDot} from "./indicators.js"
