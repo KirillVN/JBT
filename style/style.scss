@@ -9,11 +9,12 @@
   }
   
   body {
+   
     background-color: #f4eede;
     background-image: url(../img/bg-uzor-8.png);
     background-size: contain;
     .container {
-      width: 85%;
+      width: 95%;
       margin: 0 auto;
     }
   }
@@ -38,7 +39,6 @@
   }
   
   .header {
-   
     .nav {
     position: absolute;
     right: 0;
@@ -50,9 +50,12 @@
     transition: 1.5s;
     background-color: #f4eede;
     z-index: 4;
+    display: none;
   }
   .active {
     transform: translateX(0);
+    display: block;
+    transition: 2s;
   }
 }
     
@@ -106,12 +109,13 @@
     display: -ms-grid;
     display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 1px;
     text-align: center;
     margin: 0 auto;
   }
   
   .event {
+    max-width: 200px;
     margin: 12px auto;
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.882);
